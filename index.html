@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tweetly - Login</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <main class="main-container">
+
+        <!-- LEFT SECTION -->
+
+        <section class="welcome-section">
+
+            <!-- Brand Logo -->
+
+            <div class="brand">
+                <span class="brand-icon">✿</span>
+                Tweetly
+            </div>
+
+
+            <!-- Flower Decorations -->
+
+            <div class="flower flower-one">✿</div>
+
+            <div class="flower flower-two">❀</div>
+
+            <div class="flower flower-three">✿</div>
+
+
+            <!-- Welcome Content -->
+
+            <div class="welcome-content">
+
+                <p class="small-heading">
+                    JOIN THE CONVERSATION
+                </p>
+
+                <h1>
+                    Happening<br>
+                    <span>now.</span>
+                </h1>
+
+                <p class="welcome-description">
+                    See what's happening around the world.
+                    Share your thoughts and connect
+                    with people everywhere.
+                </p>
+
+                <div class="flower-line">
+                    <span>♡</span>
+                    <span>✿</span>
+                    <span>♡</span>
+                </div>
+
+            </div>
+
+
+            <!-- Footer -->
+
+            <div class="left-footer">
+                Made with love, just for you ♡
+            </div>
+
+        </section>
+
+
+
+        <!-- RIGHT SECTION -->
+
+        <section class="login-section">
+
+            <div class="login-card">
+
+
+                <!-- Mobile Logo -->
+
+                <div class="mobile-brand">
+                    ✿ Tweetly
+                </div>
+
+
+                <!-- Welcome Icon -->
+
+                <div class="welcome-icon">
+                    ♡
+                </div>
+
+
+                <p class="form-subtitle">
+                    WELCOME BACK
+                </p>
+
+
+                <h2>Sign in to Tweetly</h2>
+
+
+                <p class="form-description">
+                    We're happy to see you again!
+                </p>
+
+
+
+                <!-- LOGIN FORM -->
+
+                <form id="loginForm">
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email or username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="email"
+                            placeholder="Enter your email or username"
+                            autocomplete="username"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+
+                        <div class="password-container">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                autocomplete="off"
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword">
+
+                                Show
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Remember and Forgot Password -->
+
+                    <div class="form-options">
+
+                        <label class="remember-label">
+
+                            <input
+                                type="checkbox"
+                                id="remember">
+
+                            <span>Remember me</span>
+
+                        </label>
+
+
+                        <a href="#" id="forgotLink">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Error Message -->
+
+                    <p id="errorMessage"
+                       class="error-message"
+                       aria-live="polite">
+                    </p>
+
+
+
+                    <!-- Sign In Button -->
+
+                    <button type="submit" class="login-button">
+
+                        Sign in
+
+                        <span>→</span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <p>OR</p>
+
+                    <span></span>
+
+                </div>
+
+
+
+                <!-- Sign Up -->
+
+                <p class="signup-text">
+
+                    Don't have an account?
+
+                    <a href="#" id="signupLink">
+                        Sign up
+                    </a>
+
+                </p>
+
+
+
+                <!-- Bottom Note -->
+
+                <p class="bottom-note">
+                    Made with ♡ and peonies
+                </p>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript File -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
