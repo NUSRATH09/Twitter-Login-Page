@@ -1,0 +1,792 @@
+
+/* =====================================
+   1. BASIC SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --twitter-blue: #1d9bf0;
+
+    --blue-hover: #1689d5;
+
+    --pink: #e8a5bc;
+
+    --dark-pink: #c87596;
+
+    --light-pink: #fff0f5;
+
+    --white: #ffffff;
+
+    --text: #17202a;
+
+    --muted: #657786;
+
+    --border: #e1e8ed;
+}
+
+body {
+
+    font-family: 'DM Sans', sans-serif;
+
+    background: var(--white);
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+}
+
+
+/* =====================================
+   2. MAIN CONTAINER
+===================================== */
+
+.main-container {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+/* =====================================
+   3. LEFT WELCOME SECTION
+===================================== */
+
+.welcome-section {
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        145deg,
+        #1d9bf0,
+        #1689d5
+    );
+
+    color: var(--white);
+
+    padding: 65px 12%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* BRAND LOGO */
+
+.brand {
+
+    font-size: 31px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 95px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.brand-icon {
+
+    color: #ffe0ec;
+
+    font-size: 34px;
+
+    margin-right: 7px;
+
+}
+
+
+/* WELCOME CONTENT */
+
+.welcome-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.small-heading {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 23px;
+
+    color: #e7f5ff;
+
+}
+
+.welcome-content h1 {
+
+    font-size: clamp(48px, 6vw, 72px);
+
+    font-weight: 800;
+
+    line-height: 1.12;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+
+}
+
+.welcome-content h1 span {
+
+    color: #ffe0ec;
+
+}
+
+.welcome-description {
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    max-width: 360px;
+
+    color: #eaf6ff;
+
+}
+
+
+/* FLOWER LINE */
+
+.flower-line {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+    font-size: 24px;
+
+    color: #ffe0ec;
+
+}
+
+
+/* LEFT FOOTER */
+
+.left-footer {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 12%;
+
+    font-size: 12px;
+
+    color: #eaf6ff;
+
+    letter-spacing: 1px;
+
+    z-index: 2;
+
+}
+
+
+/* =====================================
+   4. FLOWER DECORATIONS
+===================================== */
+
+.flower {
+
+    position: absolute;
+
+    color: rgba(255, 225, 237, 0.25);
+
+    pointer-events: none;
+
+    user-select: none;
+
+}
+
+.flower-one {
+
+    font-size: 210px;
+
+    top: 4%;
+
+    right: -35px;
+
+    transform: rotate(20deg);
+
+}
+
+.flower-two {
+
+    font-size: 155px;
+
+    bottom: 4%;
+
+    right: 5%;
+
+    transform: rotate(-25deg);
+
+}
+
+.flower-three {
+
+    font-size: 100px;
+
+    top: 48%;
+
+    left: -35px;
+
+    transform: rotate(15deg);
+
+}
+
+
+/* =====================================
+   5. RIGHT LOGIN SECTION
+===================================== */
+
+.login-section {
+
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 45px 30px;
+
+}
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 400px;
+
+}
+
+
+/* WELCOME ICON */
+
+.welcome-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: var(--light-pink);
+
+    color: var(--dark-pink);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    margin-bottom: 23px;
+
+}
+
+
+/* LOGIN TITLE */
+
+.form-subtitle {
+
+    color: var(--dark-pink);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+.login-card h2 {
+
+    font-size: 29px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 10px;
+
+}
+
+.form-description {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =====================================
+   6. INPUT FIELDS
+===================================== */
+
+.input-group {
+
+    margin-bottom: 23px;
+
+}
+
+.input-group label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 9px;
+
+}
+
+.input-group input {
+
+    width: 100%;
+
+    height: 49px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    padding: 0 14px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+.input-group input:focus {
+
+    border-color: var(--twitter-blue);
+
+    box-shadow: 0 0 0 3px rgba(29, 155, 240, 0.10);
+
+}
+
+.input-group input::placeholder {
+
+    color: #aab8c2;
+
+}
+
+
+/* =====================================
+   7. PASSWORD FIELD
+===================================== */
+
+.password-container {
+
+    position: relative;
+
+}
+
+.password-container input {
+
+    padding-right: 65px;
+
+}
+
+#togglePassword {
+
+    position: absolute;
+
+    right: 13px;
+
+    top: 16px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--dark-pink);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================
+   8. FORM OPTIONS
+===================================== */
+
+.form-options {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 5px 0 20px;
+
+    font-size: 12px;
+
+}
+
+.remember-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: var(--muted);
+
+    cursor: pointer;
+
+}
+
+.remember-label input {
+
+    accent-color: var(--dark-pink);
+
+    cursor: pointer;
+
+}
+
+.form-options a {
+
+    color: var(--twitter-blue);
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+.form-options a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================
+   9. ERROR MESSAGE
+===================================== */
+
+.error-message {
+
+    color: #d93050;
+
+    font-size: 12px;
+
+    min-height: 17px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =====================================
+   10. LOGIN BUTTON
+===================================== */
+
+.login-button {
+
+    width: 100%;
+
+    height: 49px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: var(--twitter-blue);
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.login-button span {
+
+    margin-left: 8px;
+
+    font-size: 18px;
+
+}
+
+.login-button:hover {
+
+    background: var(--blue-hover);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(29, 155, 240, 0.20);
+
+}
+
+.login-button:active {
+
+    transform: scale(0.99);
+
+}
+
+
+/* =====================================
+   11. DIVIDER
+===================================== */
+
+.divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 27px 0;
+
+}
+
+.divider span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--border);
+
+}
+
+.divider p {
+
+    font-size: 11px;
+
+    color: var(--muted);
+
+}
+
+
+/* =====================================
+   12. SIGN UP SECTION
+===================================== */
+
+.signup-text {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: var(--muted);
+
+}
+
+.signup-text a {
+
+    color: var(--twitter-blue);
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+.signup-text a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* BOTTOM NOTE */
+
+.bottom-note {
+
+    text-align: center;
+
+    margin-top: 60px;
+
+    color: var(--dark-pink);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* MOBILE BRAND */
+
+.mobile-brand {
+
+    display: none;
+
+}
+
+
+/* =====================================
+   13. TABLET RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    .main-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .welcome-section {
+
+        min-height: 350px;
+
+        padding: 40px 9%;
+
+    }
+
+    .brand {
+
+        margin-bottom: 45px;
+
+    }
+
+    .welcome-content h1 {
+
+        font-size: 50px;
+
+    }
+
+    .left-footer {
+
+        left: 9%;
+
+        bottom: 20px;
+
+    }
+
+    .login-section {
+
+        min-height: auto;
+
+        padding: 55px 9%;
+
+    }
+
+    .login-card {
+
+        max-width: 450px;
+
+    }
+
+    .mobile-brand {
+
+        display: block;
+
+        color: var(--dark-pink);
+
+        font-size: 24px;
+
+        font-weight: 800;
+
+        margin-bottom: 30px;
+
+    }
+
+    .bottom-note {
+
+        margin-top: 40px;
+
+    }
+
+}
+
+
+/* =====================================
+   14. SMALL MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 420px) {
+
+    .welcome-section {
+
+        min-height: 310px;
+
+    }
+
+    .welcome-content h1 {
+
+        font-size: 43px;
+
+    }
+
+    .login-card h2 {
+
+        font-size: 25px;
+
+    }
+
+    .form-options {
+
+        font-size: 11px;
+
+    }
+
+}
